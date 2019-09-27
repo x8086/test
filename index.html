@@ -1,16 +1,282 @@
-<html>
-  <head>
-    <link type="text/css" rel="stylesheet" href="css.css">
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+  <link type="text/css" rel="stylesheet" href="style.css">
 
-<h1>HTML5 local video file player example</h1>
-<div id="message"></div>
-<input type="file" accept="video/*"/>
-<video controls autoplay></video>
+  <title>Expat Calculator</title>
+  <style>
+    .next {
+      display: inline-block;
+    }
+    table {
+      display: inline-block;
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
+</head>
 
+
+<body>
+  <table>
+    <tr>
+   <td>
+  <form>
+    <div><input class="inputBar" type="text" name="vnd" id="vnd" onfocusin="vndFocus()"><span style="color: white; font-size: 40px;"> VND</span></div>
+
+    <div><input class="inputBar"  type="text" name="usd" id="usd" onfocusin="usdFocus()"><span style="color: white; font-size: 40px;"> USD</span></div>
+  </form>
     
+  <form class="radioButtons">
+      <div><input type="radio" name="k" id="thousand" checked> K<br></div>
+      <div><input type="radio" name="k" id="million"> Tr<br></div>
+      <div><input type="radio" name="k" id="billion"> Ty</div>
+      <div><input type="radio" name="k" id="height"> H</div>
+    </form>
+
+  
+    <div class="bottomBox">
+      <button2 class="btn7 mybutton"</i>7</button2> 
+      <button2 class="btn4 myButton"</i>4</button2> 
+      <button2 class="btn1 myButton"</i>1</button2>
+      <button2 class="btnDot myButton"</i>.</button2> 
+      <button2 class="btn8 myButton"</i>8</button2> 
+      <button2 class="btn5 myButton"</i>5</button2>
+      <button2 class="btn2 myButton"</i>2</button2> 
+      <button2 class="btn0 myButton"</i>0</button2> 
+      <button3 class="btn9 myButton"</i>9</button3>
+      <button3 class="btn6 myButton"</i>6</button3> 
+      <button3 class="btn3 myButton"</i>3</button3> 
+      <button3 class="btnC myButton"</i>C</button3>
+      <button3 class="btnK myButton highlight"</i>K</button3>
+      <button3 class="btnTr myButton"</i>Tr</button3>
+      <button3 class="btnTy myButton "</i>Ty</button3>
+      <button3 class="btnH myButton hidden"</i>H</button3>
+    </div ><div style="color: white; margin-bottom: 300px;">
+    1 USD = 23,000 VND as of Jan 2019</div>
+  <div class="vndDisplay" id="vndtag"></div>
+    </td>
     
-  </body>
-  <script src="script.js"></script>
-</html>
+<!------------------------------------------------------------------------------->  
+
+
+
+
+<td>
+<table style="font-size: 22.925px !important; line-height: 34.4px !important;">
+    <thead style="font-size: 22.925px !important; line-height: 34.4px !important;">
+    <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+    <th style="font-size: 18px !important; line-height: 24px !important;">Centimeters</th>
+    <th style="font-size: 18px !important; line-height: 24px !important;">Feet and inches</th>
+    </tr>
+    </thead>
+    <tbody style="font-size: 22.925px !important; line-height: 34.4px !important;">
+    
+    <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">150 cm</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">4 feet, 11.06 in</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">151 cm</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">4 feet, 11.45 in</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">152 cm</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">4 feet, 11.84 in</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">153 cm</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">5 feet, 0.24 in</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">154 cm</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">5 feet, 0.63 in</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">155 cm</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">5 feet, 1.02 in</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">156 cm</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">5 feet, 1.42 in</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">157 cm</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">5 feet, 1.81 in</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">158 cm</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">5 feet, 2.20 in</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">159 cm</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">5 feet, 2.60 in</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">160 cm</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">5 feet, 2.99 in</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">161 cm</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">5 feet, 3.39 in</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">162 cm</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">5 feet, 3.78 in</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">163 cm</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">5 feet, 4.17 in</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">164 cm</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">5 feet, 4.57 in</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">165 cm</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">5 feet, 4.96 in</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">166 cm</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">5 feet, 5.35 in</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">167 cm</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">5 feet, 5.75 in</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">168 cm</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">5 feet, 6.14 in</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">169 cm</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">5 feet, 6.54 in</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">170 cm</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">5 feet, 6.93 in</td>
+  </tr>
+    </tbody>
+    </table>
+  </td>
+
+  
+
+<!------------------------------------------------------------------------------->  
+<td><table style="font-size: 22.925px !important; line-height: 34.4px !important;">
+    <thead style="font-size: 22.925px !important; line-height: 34.4px !important;">
+    <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+    <th style="font-size: 18px !important; line-height: 24px !important;">Kilograms</th>
+    <th style="font-size: 18px !important; line-height: 24px !important;">Pounds</th>
+    </tr>
+    </thead>
+    <tbody style="font-size: 22.925px !important; line-height: 34.4px !important;">
+    
+    <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">40 kg</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">88.2 lb</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">41 kg</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">90.4 lb</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">42 kg</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">92.6 lb</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">43 kg</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">94.8 lb</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">44 kg</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">97.0 lb</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">45 kg</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">99.2 lb</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">46 kg</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">101.4 lb</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">47 kg</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">103.6 lb</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">48 kg</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">105.8 lb</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">49 kg</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">108.0 lb</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">50 kg</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">110.2 lb</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">51 kg</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">112.4 lb</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">52 kg</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">114.6 lb</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">53 kg</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">116.8 lb</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">54 kg</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">119.0 lb</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">55 kg</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">121.3 lb</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">56 kg</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">123.5 lb</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">57 kg</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">125.7 lb</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+  <td style="font-size: 18px !important; line-height: 24px !important;">58 kg</td>
+  <td style="font-size: 18px !important; line-height: 24px !important;">127.9 lb</td>
+  </tr>
+  <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+      <td style="font-size: 18px !important; line-height: 24px !important;">59 kg</td>
+      <td style="font-size: 18px !important; line-height: 24px !important;">130.1 lb</td>
+      </tr>
+      <tr style="font-size: 22.925px !important; line-height: 34.4px !important;">
+          <td style="font-size: 18px !important; line-height: 24px !important;">60 kg</td>
+          <td style="font-size: 18px !important; line-height: 24px !important;">132.3 lb</td>
+          </tr>
+ 
+  
+    </tbody>
+    </table></td>
+
+
+</tr>
+</table>
+
+<script src="script.js"></script>
+</body>
+
