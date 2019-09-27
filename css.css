@@ -1,16 +1,73 @@
-video, input {
-    display: block;
+body {
+    background-color: #121212;
 }
 
-input {
-    width: 100%;       
+.bottomBox {
+    width: 345px;
+    height: 325px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.info {
-    background-color: aqua;            
+.inputBar {
+    height: 75px;
+    width: 400px;
+    text-align: right;
+    margin-top: 10px;
+    padding-right: 10px;
+    border: 1px solid black;
+    font-size: 40px;
+    font-weight: bold;
 }
 
-.error {
-    background-color: red;
-    color: white;
+.hidden {
+    visibility: hidden;
 }
+
+.radioButtons {
+    position: absolute;
+    visibility: hidden;
+}
+
+button2, button3 {
+    text-align: center;
+}
+
+
+
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	
+	background-color:#d0451b;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:30px;
+    padding:20px 20px;
+    margin: 2px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+
+.myButton:active {
+	background-color: #eb7e5f;
+}
+
+.highlight {
+    background-color: #8d2e12;
+}
+
+
+
+
+
